@@ -1,5 +1,6 @@
 const palindromeNum = document.querySelector("#palindromeNum");
 const btn = document.querySelector("#btn");
+const outbox = document.querySelector("#outbox");
 
 console.log(palindromeNum);
 console.log(btn);
@@ -18,8 +19,11 @@ function checkNum () {
 
     if (! (palindromeNumValue === sum )) {
         console.log("this is palindrome number")
+        outbox.innerHTML = "This is not palindrome number"
     } else {
         console.log("not a palindrome number")
+        outbox.innerHTML = "This is palindrome number"
+
     }
 }
 
